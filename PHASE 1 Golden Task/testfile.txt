@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Button</h1>
+    <button id="myButton">Click Me</button>
+    <p id="message"></p>
+  </div>
+</body>
+</html>
+
+<style>
+  /* CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  #myButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  // JavaScript code
+  const button = document.getElementById('myButton');
+  const message = document.getElementById('message');
+
+  button.addEventListener('click', () => {
+    message.textContent = 'Button clicked!';
+  });
+</script>
